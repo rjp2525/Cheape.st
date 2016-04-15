@@ -7,6 +7,7 @@
     <title>Coming Soon :: Cheape.st</title>
     <meta name="description" content="Cheape.st helps you find the cheapest prices with a simple search. Coming soon!">
     <meta name="keywords" content="cheapest, cheap, lowest prices, save money">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 
     <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lobster:400' rel='stylesheet' type='text/css'>
