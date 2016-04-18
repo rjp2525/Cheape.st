@@ -12,7 +12,7 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lobster:400' rel='stylesheet' type='text/css'>
 
-    <style> html, body {margin: 0; padding: 0; } body {background: #3e4651; color: #d4d4d4; height: 100vh; width: 100vw; } .soon {text-align: center; padding-top: 140px; } .soon h1 {font-family: 'Lobster', sans-serif; font-size: 75px; } .soon h3 {font-family: 'Lato', sans-serif; font-weight: 400; font-size: 24px; } </style> </head>
+    <style> html, body {margin: 0; padding: 0; } body {background: #3e4651; color: #d4d4d4; height: 100vh; width: 100vw; } .soon {text-align: center; padding-top: 140px; } .soon h1 {font-family: 'Lobster', sans-serif; font-size: 75px;  letter-spacing: -1px; } .soon h3 {font-family: 'Lato', sans-serif; font-weight: 400; font-size: 24px; } </style> </head>
 <body>
     <div class="soon">
         <h1>Cheape.st</h1>
