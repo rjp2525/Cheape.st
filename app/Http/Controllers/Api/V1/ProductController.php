@@ -20,15 +20,12 @@ class ProductController extends Controller
         $this->products = $products;
     }
 
-    public function index()
-    {
-        return $this->products->paginate(50);
-        //return $this->products->all();
-    }
-
     public function search(Request $request)
     {
-        $name = $request->input('q');
-        return $this->products->search($name)->orderBy('price', 'asc')->paginate(15);
+        if ($request->input('q') && !empty($request->input('q'))) {
+            return $this->products->search($request->input('q'))->orderBy('price', 'asc')->paginate(15)->appends(['q' => $request->input('q')]);
+        }
+
+        return response()->json(['error' => true, 'message' => 'No search query provided']);
     }
 }
