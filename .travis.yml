@@ -14,9 +14,6 @@ before_script:
 script:
   - vendor/bin/phpunit --verbose
 
-after_success:
-  - bash <(curl -s https://codecov.io/bash) -t $CODECOV_TOKEN
-
 matrix:
     allow_failures:
         - php: 7.0
