@@ -17,7 +17,6 @@ Route::get('/', function () {
 
 Route::group(['prefix' => 'api/v1', 'namespace' => 'Api\V1'], function () {
     Route::get('/', ['as' => 'api.index', 'uses' => 'IndexController@index']);
-    Route::get('test', ['as' => 'api.test', 'uses' => 'IndexController@test']);
     Route::get('products', ['as' => 'api.products', 'uses' => 'ProductController@index']);
     Route::get('search', ['as' => 'api.search', 'uses' => 'ProductController@search']);
 });
