@@ -13,7 +13,6 @@ before_script:
   - php artisan key:generate
 
 script:
-  - vendor/bin/phpspec run --verbose --format=dot
   - vendor/bin/phpunit --verbose
 
 matrix:
