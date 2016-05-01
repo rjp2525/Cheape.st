@@ -23,7 +23,7 @@ class ProductController extends Controller
     public function search(Request $request)
     {
         if ($request->input('q') && !empty($request->input('q'))) {
-            return $this->products->search($request->input('q'))->orderBy('price', 'asc')->paginate(15)->appends(['q' => $request->input('q')]);
+            return $this->products->searchProducts($request->input('q'))->paginate(15)->appends(['q' => $request->input('q')]);
         }
 
         return response()->json(['error' => true, 'message' => 'No search query provided']);
