@@ -1,0 +1,47 @@
+<div class="main">
+	<div class="container">
+		<div class="text-center">
+			<a href="/">
+				<h1 class="main-header" style="margin-bottom:50px;">
+					Cheape.st
+				</h1>
+			</a>
+		</div>
+		<div class="text-center" ng-if="!vm.products">
+			<h1><i class="fa fa-refresh fa-spin"></i></h1>
+		</div>
+		<div ng-if="vm.products.length > 0">
+			<ul class="wide-list">
+				<li class="animated fadeIn slideInUp" ng-repeat="product in vm.products track by $index" ng-class="$index == 0 ? 'active' : null">
+					<a ng-href="{{ product.url }}" class="wide-list-grid">
+						<div class="wide-list-img">
+							<img ng-src="{{ vm.strip(product.images) }}" alt="" class="img-responsive wide-list-img">
+						</div>
+						<div class="wide-list-titles">
+							<div class="wide-list-title" ng-if="product.name.length > 40">
+								{{ product.name.substring(0, 40) }}...
+							</div>
+							<div class="wide-list-title" ng-if="product.name.length <= 40">
+								{{ product.name }}
+							</div>
+							<div class="wide-list-sub" ng-if="product.description_short.length > 50">
+								{{ product.description_short.substring(0, 50) }}...
+							</div>
+							<div class="wide-list-sub" ng-if="product.description_short.length <= 50">
+								{{ product.description_short }}
+							</div>
+						</div>
+						<div class="wide-list-price">
+							${{ product.price }}
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="text-center" ng-if="vm.products.length <= 0">
+			<h4 class="main-header-sub">
+				No products matching your query!
+			</h4>
+		</div>
+	</div>
+</div>

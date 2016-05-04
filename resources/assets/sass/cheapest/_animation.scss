@@ -1,0 +1,26 @@
+/*
+	===== Animations =====
+	=== Adding onto animate.css ===
+ */
+
+.slideRight {
+
+	&.ng-enter {
+		animation: slideInRight .4s;
+	}
+
+	&.ng-leave {
+		animation: slideOutLeft .4s;
+	}
+}
+
+.slideLeft {
+
+	&.ng-enter {
+		animation: slideInLeft .4s;
+	}
+
+	&.ng-leave {
+		animation: slideOutRight .4s;
+	}
+}

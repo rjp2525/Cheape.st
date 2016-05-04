@@ -1,10 +1,15 @@
 {
   "private": true,
-  "devDependencies": {
-    "gulp": "^3.9.1"
-  },
   "dependencies": {
-    "laravel-elixir": "^5.0.0",
-    "bootstrap-sass": "^3.0.0"
+    "angular": "^1.5.5",
+    "angular-animate": "^1.5.5",
+    "animate.css": "^3.5.1",
+    "bootstrap-sass": "^3.3.6",
+    "browserify": "^13.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.1",
+    "vinyl-source-stream": "^1.1.0"
   }
 }

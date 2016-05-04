@@ -1,0 +1,15 @@
+/*
+ ===== Variables ======
+ === Change global colors, etc. ===
+ */
+
+// ==== Colors ====
+$color-bg: #3e4651;
+$color-primary: #eee;
+$color-secondary: #6c7989;
+$color-text: #b1bece;
+$color-link: lighten($color-text, 6.5%);
+$color-text-sub: lighten($color-text, 20%);
+
+// ==== Font ====
+$font-family: "Proxima Nova", sans-serif;

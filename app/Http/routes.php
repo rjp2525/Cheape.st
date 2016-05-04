@@ -12,7 +12,7 @@
  */
 
 Route::get('/', function () {
-    return view('soon');
+    return view('main');
 });
 
 Route::group(['prefix' => 'api/v1', 'namespace' => 'Api\V1', 'middleware' => 'throttle:250'], function () {
@@ -23,5 +23,5 @@ Route::group(['prefix' => 'api/v1', 'namespace' => 'Api\V1', 'middleware' => 'th
 // Catch any routes not defined and display the homepage
 // TODO: Change this to a 404 page
 Route::any('{path?}', function () {
-    return view('soon');
+    return view('main');
 })->where('path', '.+');

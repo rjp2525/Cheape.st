@@ -1,0 +1,37 @@
+/*
+ ===== Headers ===== 
+ === Styling for h1 - h6 ===
+ */
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	font-weight: normal;
+	padding: 0;
+	margin: 0;
+}
+
+// === Custom Headers ===
+.main-header {
+	font-family: "Lobster", $font-family;
+	font-size: 80px;
+	color: #d4d4d4;
+	margin-bottom: 60px;
+
+	a {
+		color: $color-text;
+	}
+
+	@media(max-width: 720px) {
+		font-size: 50px;
+	}
+}
+
+.sub-header {
+	color: $color-text-sub;
+	display: block;
+	font-weight: thin;
+}

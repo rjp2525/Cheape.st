@@ -1,0 +1,44 @@
+/*
+	===== Forms =====
+	=== Anything related to forms ===
+ */
+
+// ==== General ====
+input[type="text"] {
+	padding: 10px;
+	border-radius: 25px;
+	background: #fff;
+	border: 0;
+	transition: all 0.2s ease-in-out;
+	
+	::-webkit-placeholder {
+		color: $color-text;
+	}
+
+	&:focus {
+		background: darken(#fff, 10%);
+		border: 0;
+		outline: 0;
+	}
+}
+
+button {
+	padding: 15px 75px 15px 75px;
+	border: 0;
+	background: $color-secondary;
+	cursor: pointer;
+	border-radius: 2px;
+	color: $color-text-sub;
+	transition: all 0.2s ease-in-out;
+
+	&:hover {
+		background: darken($color-secondary, 10%);
+	}
+}
+
+// ==== The main input on the home page ====
+.main-input {
+	width: 60%;
+	text-align: center;
+	margin-bottom: 30px;
+}
