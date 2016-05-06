@@ -1,6 +1,6 @@
 var productService = function($http, $q) {
 	var ProductService = {};
-	const API = 'http://localhost/api/v1/search?q=';
+	const API = 'http://69.164.209.164/v1/search?q=';
 
 	ProductService.search = function(query) {
 		var defer = $q.defer();
