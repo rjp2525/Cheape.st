@@ -106,7 +106,7 @@ angular
 },{}],3:[function(require,module,exports){
 var productService = function($http, $q) {
 	var ProductService = {};
-	const API = 'http://localhost:8000/api/v1/search?q=';
+	const API = 'http://cheape.st/api/v1/search?q=';
 
 	ProductService.search = function(query) {
 		var defer = $q.defer();
