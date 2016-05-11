@@ -9,7 +9,7 @@
     <meta name="description" content="Cheape.st helps you find the cheapest prices with a simple search. Coming soon!">
     <meta name="keywords" content="cheapest, cheap, lowest prices, save money">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-    
+
     <link rel="stylesheet" href="{{ url('css/animate.css') }}">
 	<link rel="stylesheet" href="{{ url('css/app.css') }}">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-aNUYGqSUL9wG/vP7+cWZ5QOM4gsQou3sBfWRr/8S3R1Lv0rysEmnwsRKMbhiQX/O" crossorigin="anonymous">
