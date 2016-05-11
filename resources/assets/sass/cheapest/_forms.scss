@@ -15,6 +15,23 @@ input[type="text"] {
 		color: $color-text;
 	}
 
+	&.text-lg {
+		width: 60%;
+		text-align: center;
+
+		@media(max-width: 1000px) {
+			width: 70%;
+		}
+
+		@media(max-width: 720px) {
+			width: 80%;
+		}
+	
+		@media(max-width: 430px) {
+			width: 100%;
+		}
+	}
+
 	&:focus {
 		background: darken(#fff, 10%);
 		border: 0;
@@ -22,7 +39,7 @@ input[type="text"] {
 	}
 }
 
-button {
+.btn {
 	padding: 15px 75px 15px 75px;
 	border: 0;
 	background: $color-secondary;
@@ -31,14 +48,15 @@ button {
 	color: $color-text-sub;
 	transition: all 0.2s ease-in-out;
 
+	&.btn-lg {
+		border-radius: 25px;
+
+		@media(max-width: 430px) {
+			width: 100%;
+		}
+	}
+
 	&:hover {
 		background: darken($color-secondary, 10%);
 	}
-}
-
-// ==== The main input on the home page ====
-.main-input {
-	width: 60%;
-	text-align: center;
-	margin-bottom: 30px;
 }

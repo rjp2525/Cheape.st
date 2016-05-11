@@ -4,23 +4,70 @@
  */
 
 .slideRight {
-
 	&.ng-enter {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	&.ng-enter-active {
 		animation: slideInRight .4s;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
 	}
 
 	&.ng-leave {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	&.ng-leave-active {
 		animation: slideOutLeft .4s;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
 	}
 }
 
 .slideLeft {
-
 	&.ng-enter {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	
+	&.ng-enter-active {
 		animation: slideInLeft .4s;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
 	}
 
 	&.ng-leave {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	&.ng-leave-active {
 		animation: slideOutRight .4s;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
 	}
 }
