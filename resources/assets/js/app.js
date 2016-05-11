@@ -1,3 +1,7 @@
+require('angular');
+require('angular-ui-router');
+require('angular-animate');
+
 var search = require('./search.js');
 
 var run = function($rootScope, $state) {

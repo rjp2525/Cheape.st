@@ -21,9 +21,6 @@
 	<div ui-view style="height:100%;" ng-class="stateIsHome() ? 'slideRight' : 'slideLeft'"></div>
 	<script src="https://use.typekit.net/fim8wog.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
-	<script src="{{ url('js/angular.min.js') }}"></script>
-	<script src="{{ url('js/angular-ui-router.min.js') }}"></script>
-	<script src="{{ url('js/angular-animate.min.js') }}"></script>
 	<script src="{{ url('js/app.js') }}"></script>
 </body>
 </html>
