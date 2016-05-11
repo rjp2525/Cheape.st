@@ -2,6 +2,7 @@
 
 namespace Cheapest\Exceptions;
 
+use App;
 use Cheapest\Exceptions\GithubIssue;
 use Exception;
 use Illuminate\Auth\Access\AuthorizationException;
