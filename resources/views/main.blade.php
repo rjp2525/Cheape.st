@@ -16,11 +16,13 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lobster:400' rel='stylesheet' type='text/css'>
-</head>
-<body>
-	<div ui-view style="height:100%;" ng-class="stateIsHome() ? 'slideRight' : 'slideLeft'"></div>
+
 	<script src="https://use.typekit.net/fim8wog.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+<body>
+	<div ui-view style="height:100%;" ng-class="stateIsHome() ? 'slideLeft' : 'slideRight'"></div>
+    <script src="{{ url('js/jquery.min.js') }}"></script>
 	<script src="{{ url('js/app.js') }}"></script>
 </body>
 </html>

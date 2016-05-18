@@ -1,3 +1,4 @@
+require('jquery');
 require('angular');
 require('angular-ui-router');
 require('angular-animate');
@@ -62,4 +63,6 @@ angular
 		mainCtrl
 	]);
 
-var productService = require('./services/productService.js');
+var productService = require('./services/product.service.js')
+
+var toggleClass = require('./directives/toggle-class.directive.js')

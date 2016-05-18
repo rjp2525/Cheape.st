@@ -4,7 +4,7 @@
  */
 
 // ==== General ====
-input[type="text"] {
+.text {
 	padding: 10px;
 	border-radius: 25px;
 	background: #fff;
@@ -18,7 +18,9 @@ input[type="text"] {
 	&.text-lg {
 		width: 60%;
 		text-align: center;
-
+	}
+	
+	&.text-responsive {
 		@media(max-width: 1000px) {
 			width: 70%;
 		}
@@ -44,12 +46,15 @@ input[type="text"] {
 	border: 0;
 	background: $color-secondary;
 	cursor: pointer;
-	border-radius: 2px;
+	border-radius: 25px;
 	color: $color-text-sub;
 	transition: all 0.2s ease-in-out;
 
+	&.btn-sm {
+		padding: 10px 50px 10px 50px;	
+	}
+
 	&.btn-lg {
-		border-radius: 25px;
 
 		@media(max-width: 430px) {
 			width: 100%;
@@ -58,5 +63,40 @@ input[type="text"] {
 
 	&:hover {
 		background: darken($color-secondary, 10%);
+	}
+}
+
+// Input groups
+.input-group {
+	
+	.text {
+		width: 70%;
+		margin-right: 0;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+		
+		@media (max-width: 885px) {
+			width: 60%;
+		}
+		
+		@media (max-width: 427px) {
+			width: 100%;
+			margin-bottom: 10px;
+			border-top-right-radius: 25px;
+			border-bottom-right-radius: 25px;
+		}
+	}
+	
+	.btn {
+		width: auto;
+		margin-left: -5px;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		
+		@media (max-width: 427px) {
+			width: 100%;
+			border-top-left-radius: 25px;
+			border-bottom-left-radius: 25px;
+		}
 	}
 }

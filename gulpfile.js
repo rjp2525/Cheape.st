@@ -5,17 +5,6 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var plumber = require('gulp-plumber');
 
-/*
- |--------------------------------------------------------------------------
- | Elixir Asset Management
- |--------------------------------------------------------------------------
- |
- | Elixir provides a clean, fluent API for defining some basic Gulp tasks
- | for your Laravel application. By default, we are compiling the Sass
- | file for our application, as well as publishing vendor resources.
- |
- */
-
 gulp.task('scss', function() {
 	gulp.src('./resources/assets/sass/app.scss')
 		.pipe(plumber({
@@ -29,6 +18,11 @@ gulp.task('scss', function() {
 		.pipe(gulp.dest('./public/css'));
 });
 
+gulp.task('lib', function() {
+	return gulp.src('./node_modules/jquery/dist/jquery.min.js')
+		.pipe(gulp.dest('./public/js'))
+})
+
 gulp.task('js', function() {
     return browserify('./resources/assets/js/app.js')
         .bundle()
@@ -41,7 +35,7 @@ gulp.task('views', function() {
 		.pipe(gulp.dest('./public/views'));
 });
 
-gulp.task('default', ['scss', 'js', 'views'], function() {
+gulp.task('default', ['scss', 'lib', 'js', 'views'], function() {
 	gulp.watch('./resources/assets/sass/**/*.scss', ['scss']);
 	gulp.watch('./resources/assets/js/**/*.js', ['js']);
 	gulp.watch('./resources/assets/views/**/*.html', ['views']);
