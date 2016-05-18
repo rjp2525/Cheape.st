@@ -20,6 +20,10 @@ var searchCtrl = function($state, ProductService) {
 		string = string.substring(2, string.length - 2);
 		return string.stripSlashes();
 	}
+	
+	vm.submit = function() {
+		$state.go('search', {query: vm.search});
+	} 
 
 	ProductService.search(query)
 		.then(function(response) {

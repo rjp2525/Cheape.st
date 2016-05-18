@@ -19,10 +19,13 @@ h6 {
 	font-family: "Lobster", $font-family;
 	font-size: 80px;
 	color: #d4d4d4;
-	margin-bottom: 60px;
 
 	a {
 		color: #d4d4d4;
+	}
+	
+	&.push-down {
+		margin-bottom: 60px;
 	}
 
 	@media(max-width: 720px) {

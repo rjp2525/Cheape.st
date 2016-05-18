@@ -1,19 +1,25 @@
 <div class="main">
 	<div class="container">
-		<div class="text-center">
-			<h1 class="main-header">
+		<div class="text-center push-bot-md">
+			<h1 class="main-header push-bot-md">
 				<a href="/">
 					Cheape.st
 				</a>
 			</h1>
+			<form ng-submit="vm.submit()" autocomplete="off">
+				<div class="input-group">
+					<input type="text" name="search" ng-model="vm.search" id="search" class="text text-lg" placeholder="Ninja Blender">
+					<button class="btn btn-sm">Search</button>
+				</div>
+			</form>
 		</div>
 		<div class="text-center" ng-if="!vm.products">
 			<h1><i class="fa fa-refresh fa-spin"></i></h1>
 		</div>
 		<div ng-if="vm.products.length > 0">
 			<ul class="wide-list">
-				<li class="animated fadeIn slideInUp" ng-repeat="product in vm.products track by $index" ng-class="$index == 0 ? 'active' : null">
-					<a ng-href="{{ product.url }}" class="wide-list-grid">
+				<li class="animated fadeIn slideInUp" toggle-class="active" ng-repeat="product in vm.products track by $index" ng-class="$index == 0 ? 'active' : null">
+					<a ng-href="" class="wide-list-grid">
 						<div class="wide-list-img">
 							<img ng-src="{{ vm.strip(product.images) }}" alt="" class="img-responsive wide-list-img">
 						</div>
