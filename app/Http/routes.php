@@ -18,6 +18,7 @@ Route::get('/', function () {
 Route::group(['prefix' => 'api/v1', 'namespace' => 'Api\V1', 'middleware' => 'api'], function () {
     Route::get('/', ['as' => 'api.index', 'uses' => 'IndexController@index']);
     Route::get('search', ['as' => 'api.search', 'uses' => 'ProductController@search']);
+    Route::get('item/{id}', ['as' => 'api.item', 'uses' => 'ProductController@detail']);
 });
 
 // Catch any routes not defined and display the homepage

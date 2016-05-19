@@ -28,4 +28,14 @@ class ProductController extends Controller
 
         return response()->json(['error' => true, 'message' => 'No search query provided']);
     }
+
+    public function detail($id)
+    {
+        $item = $this->products->find($id);
+        if ($item) {
+            return response()->json($this->products->find($id));
+        }
+
+        return response()->json(['error' => true, 'message' => 'No products found for item ID ' . e($id)]);
+    }
 }
